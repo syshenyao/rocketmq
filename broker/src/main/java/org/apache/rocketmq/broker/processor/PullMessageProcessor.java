@@ -280,6 +280,7 @@ public class PullMessageProcessor implements NettyRequestProcessor {
         }
     }
 
+    // 3. 处理请求
     @Override
     public RemotingCommand processRequest(final ChannelHandlerContext ctx,
         RemotingCommand request) throws RemotingCommandException {
