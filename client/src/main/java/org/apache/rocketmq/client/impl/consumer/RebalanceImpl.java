@@ -296,6 +296,7 @@ public abstract class RebalanceImpl {
         return subscriptionInner;
     }
 
+    // 根据topic 负载均衡的入口
     private boolean rebalanceByTopic(final String topic, final boolean isOrder) {
         boolean balanced = true;
         switch (messageModel) {
